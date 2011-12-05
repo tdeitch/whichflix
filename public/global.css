@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'KnewaveRegular';
+    src: url('fonts/knewave-webfont.eot');
+    src: url('fonts/knewave-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/knewave-webfont.woff') format('woff'),
+         url('fonts/knewave-webfont.ttf') format('truetype'),
+         url('fonts/knewave-webfont.svg#KnewaveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    color: #000000;
+    background-color: #FFFFFF;
+    margin: 20px;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, sans serif;
+    min-width: 760px;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+header>h1 {
+    font-family: KnewaveRegular;
+}
+#content {
+    width: 740px;
+    margin: 0 auto 0 auto;
+    padding: 0;
+}

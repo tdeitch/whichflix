@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Whichflix</title>
+<link rel="stylesheet" type="text/css" href="global.css">
+<link rel="stylesheet" type="text/css" href="search.css">
+</head>
+<body>
+<header>
+<h1><a href=".">Whichflix</a></h1>
+<form name="search" action="." method="post">
+Film: <input type="text" name="film" autofocus />
+<input type="submit" value="Search" />
+</form>
+</header>
+<div id="content">
+Netflix and Amazon Instant both offer streaming movie services, but their selections are very different. Search for your favorite movies to decide which service is better for you.
+<p>
+<div id="netflix">
+<h2>Netflix</h2>
+<%= netflix %>
+</div>
+<div id="amazon">
+<h2>Amazon Instant</h2>
+<%= amazon %>
+</div>
+</div>
+</body>
+</html>
