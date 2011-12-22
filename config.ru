@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'sinatra'
-
-require 'whichflix'
+require './whichflix'
 run Sinatra::Application
 
