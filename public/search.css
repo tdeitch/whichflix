@@ -4,22 +4,15 @@ header>h1>a {
 #netflix {
     width: 270px;
     float: left;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 0 0;
     padding: 0;
 }
 #amazon {
     width: 290px;
     float: left;
     border-left: solid 1px;
-    border-right: solid 1px;
     margin: 0;
-    padding: 0 10px 0 10px;
-}
-#hulu {
-    width: 270px;
-    float: left;
-    margin: 0 10px 0 10px;
-    padding: 0;
+    padding: 0 0 0 10px;
 }
 .format {
     font-size: 70%;

@@ -81,34 +81,6 @@ def amazon_search(film)
   return results
 end
 
-def hulu_search(film)
-  results = ''
-  agent = Mechanize.new
-  page = agent.get('http://www.hulu.com/search?query=site%3Ahulu+'+film)
-  link = './/div[@class="home-play-container relative"]//span[@class="play-button-hover"]//a//@href'
-  image = './/div[@class="home-play-container relative"]//span[@class="play-button-hover"]//a//img[@class="thumbnail"]//@src'
-  title = './/div[@class="show-title-container"]//a[@class="show-title-gray info_hover beaconid beacontype"]'
-  format = './/span[@style="white-space: nowrap;"]'
-  results << '<table>'
-  i = 0
-  page.search('div[@class="home-thumb"]').each do |result|
-    if i < 5
-      if result.at(title)
-        if result.at(image)
-          results << '<tr><td><a href="' + result.search(link).text + '"><img src="'+result.search(image).text+'"></a></td>'
-        else
-          results << '<tr><td><a href="' + result.search(link).text + '"><img src="no-image.png"></a></td>'
-        end
-        results << '<td><a href="' + result.search(link).text + '">' + result.search(title).text + '</a>'
-        results << '<div class="format">' + result.search(format).text + '</div></td></tr>'
-        i += 1
-      end
-    end
-  end
-  results << '</table><br><a href=http://www.hulu.com/search?query=site%3Ahulu+'+film+'">More…</a>'
-  return results
-end
-
 get '/' do
   erb :index
 end
