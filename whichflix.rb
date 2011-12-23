@@ -118,6 +118,5 @@ post '/' do
   erb :search,
   :locals => {:netflix => netflix_search(film),
               :amazon => amazon_search(film),
-              :hulu => hulu_search(film)
               }
 end
