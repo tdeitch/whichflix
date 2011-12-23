@@ -1,7 +1,7 @@
 Whichflix
 =========
 
-Whichflix is a ruby web app for finding movies on instant streaming services. It searches Netflix, Amazon Instant, and Hulu, scrapes the results, and presents them to the user.
+Whichflix is a ruby web app for finding movies on instant streaming services. It searches Netflix and Amazon Instant, scrapes the results, and presents them to the user.
 
 Dependencies
 ------------
